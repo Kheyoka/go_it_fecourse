@@ -22,17 +22,17 @@ const totalPrice = +prompt('Сколько дроидов выхотите ку�
 const finalPrice = pricePerDroid * totalPrice;
 
 
-if (totalPrice !== null) {
+if (totalPrice !== 0) {
     if (finalPrice > credits) {
         console.log('Недостаточно средств на счету!');
     }
     else if  (finalPrice < credits) {
         console.log(`Вы купили ${totalPrice}, на счету осталось ${credits - finalPrice}`);
     }
-    else {
-        console.log('Отменено пользователем!');
+    
+} else {
+    console.log('Отменено пользователем!');
 } 
-}
     
     
 

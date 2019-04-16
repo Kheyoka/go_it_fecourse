@@ -17,48 +17,44 @@
 // PS: используй switch
 
 
-let question = prompt ('Укажите, пожалуйста, страну доставки!');
+const question = prompt ('Укажите, пожалуйста, страну доставки!');
 let value;
-let country = 'китай';
-let questionLowerCase = question.toLowerCase ()
+const CHINA_COST = '100';
+const AMERICA_COST = '250';
+const AUSTRALIA_COST = '170';
+const INDIA_COST = '80';
+const YAMAIKA_CONST = '120';
 
 
-if (questionLowerCase !== null) {
+if (question !== null) {
+    const questionLowerCase = question.toLowerCase ();
     
 
     switch(questionLowerCase) {
         case 'китай':
-        country = 'китай'
-        value = '100'
+        value = CHINA_COST
         break;
         case 'южная америка':
-        country = 'южная америка'
-        value = '250'
+        value = AMERICA_COST
         break;
         case 'австралия':
-        country =  'австралия'
-        value = '170'
+        value = AUSTRALIA_COST
         break;
         case 'индия':
-        country = 'индия'
-        value = '80'
+        value = INDIA_COST
         break;
         case 'ямайка':
-        country = 'ямайка'
-        value = '120'
+        value = YAMAIKA_CONST
         break;
-        // default: alert ('В вашей стране доставка не доступна')
+        default: alert ('В вашей стране доставка не доступна');
     }
-    if (questionLowerCase === country) {
-    alert(`Доставка в ${country} будет стоить ${value} кредитов`);
+        if(value)
+        alert(`Доставка в ${questionLowerCase} будет стоить ${value} кредитов`);
     }
     else {
-        alert ('В вашей стране доставка не доступна');
+        alert('Ждем вас снова!')
     }
-}
-    else {
-        alert('Ждем вас в следующий раз!');
-    }
+
 
     
 
