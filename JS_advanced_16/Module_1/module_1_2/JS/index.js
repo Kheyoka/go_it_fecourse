@@ -26,7 +26,7 @@ if (totalPrice !== 0) {
     if (finalPrice > credits) {
         console.log('Недостаточно средств на счету!');
     }
-    else if  (finalPrice < credits) {
+    else {
         console.log(`Вы купили ${totalPrice}, на счету осталось ${credits - finalPrice}`);
     }
     
