@@ -46,7 +46,8 @@ if (question !== null) {
         case 'ямайка':
         console.log(`Доставка в ${questionLowerCase} будет стоить ${YAMAIKA_COST} кредитов`)
         break;
-        default: console.log('В вашей стране доставка не доступна');
+        default: console.log('В вашей стране доставка не доступна')
+        break;
     }
         
     } else {
