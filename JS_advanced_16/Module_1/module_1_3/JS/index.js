@@ -49,6 +49,8 @@ if (question !== null) {
         default: console.log('В вашей стране доставка не доступна');
     }
         
+    } else {
+        console.log('Ждем вас снова');
     }
     
 
