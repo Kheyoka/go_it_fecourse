@@ -29,8 +29,10 @@ if (totalPrice !== null) {
     else if  (finalPrice < credits) {
         console.log(`Вы купили ${totalPrice}, на счету осталось ${credits - finalPrice}`);
     }
-    console.log('Отменено пользователем!');
+    else {
+        console.log('Отменено пользователем!');
 } 
+}
     
     
 
