@@ -23,7 +23,7 @@ const CHINA_COST = '100';
 const AMERICA_COST = '250';
 const AUSTRALIA_COST = '170';
 const INDIA_COST = '80';
-const YAMAIKA_CONST = '120';
+const YAMAIKA_COST = '120';
 
 
 if (question !== null) {
@@ -44,7 +44,7 @@ if (question !== null) {
         value = INDIA_COST
         break;
         case 'ямайка':
-        value = YAMAIKA_CONST
+        value = YAMAIKA_COST
         break;
         default: alert ('В вашей стране доставка не доступна');
     }
