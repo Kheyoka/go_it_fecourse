@@ -60,6 +60,16 @@ if (questionLowerCase !== null) {
         alert('Ждем вас в следующий раз!');
     }
 
-    console.log(typeof country); 
+    
 
     
+
+
+
+
+
+
+
+
+
+
