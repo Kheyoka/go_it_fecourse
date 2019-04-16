@@ -20,12 +20,13 @@
 let question = prompt ('Укажите, пожалуйста, страну доставки!');
 let value;
 let country = 'китай';
+let questionLowerCase = question.toLowerCase ()
 
 
-if (question.toLowerCase() !== null) {
+if (questionLowerCase !== null) {
     
 
-    switch(question) {
+    switch(questionLowerCase) {
         case 'китай':
         country = 'китай'
         value = '100'
@@ -48,7 +49,7 @@ if (question.toLowerCase() !== null) {
         break;
         // default: alert ('В вашей стране доставка не доступна')
     }
-    if (question === country) {
+    if (questionLowerCase === country) {
     alert(`Доставка в ${country} будет стоить ${value} кредитов`);
     }
     else {
