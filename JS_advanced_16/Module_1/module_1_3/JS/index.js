@@ -62,39 +62,4 @@ if (questionLowerCase !== null) {
 
     console.log(typeof country); 
 
-    // и был еще один вариант решения, так как к LowerCase так и не привела, пишет что null нельзя привести
-
-//     if (question === 'китай') {
-//         value = '100';
-//         }
-//         else if (question === 'южная америка') {
-//             country = 'южная америка';
-//             value = '250';
-//             }
-//         else if (question === 'австралия') {
-//             country = 'австралия'
-//             value = '170';
-//             }
-//         else if (question === 'индия') {
-//             country = 'индия'
-//             value = '80';
-//             }
-//         else if (question === 'ямайка') {
-//             country = 'ямайка'
-//             value = '120';
-//         }
-//         alert(`Доставка в ${country} будет стоить ${value} кредитов`);
-//     }
-
-//         else {
-//             alert ('В вашей стране доставка не доступна');
-//         }
-
-
-
-
-
-
-
-
-
+    
