@@ -20,7 +20,7 @@ const pricePerDroid = 3000;
 
 const totalPrice = +prompt('Сколько дроидов выхотите купить?');
 const finalPrice = pricePerDroid * totalPrice;
-// let numberCredits = credits - finalPrice;
+
 
 if (totalPrice !== null) {
     if (finalPrice > credits) {
