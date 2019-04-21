@@ -34,10 +34,7 @@ while (true) {
             alert ('У вас закончились попытки, аккаунт заблокирован!');
             break;
         }
-     } else if (inputPasswords === null) {
-        null;
-        break;
-    }
-}
+     } 
+} break;
 
     
