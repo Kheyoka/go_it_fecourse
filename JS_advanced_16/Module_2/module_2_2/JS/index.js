@@ -18,9 +18,10 @@
     
 const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
 let attemptsLeft = 3;
-let inputPasswords = prompt ('Введите пароль');
+let inputPasswords;
 
 while (true) {
+    inputPasswords = prompt ('Введите пароль');
     if (passwords.includes(inputPasswords)) {
         alert ('Добро пожаловать!');
         break;
@@ -28,13 +29,16 @@ while (true) {
         attemptsLeft --;
 
         if (attemptsLeft > 0) {
-            prompt (`Неверный пароль, у вас осталось ${attemptsLeft} попыток`); 
+            alert (`Неверный пароль, у вас осталось ${attemptsLeft} попыток`); 
         } 
         else {
             alert ('У вас закончились попытки, аккаунт заблокирован!');
             break;
         }
-     } 
-} 
+     } else if (inputPasswords === null) {
+        null;
+        break;
+    }
+}
 
     
