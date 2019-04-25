@@ -20,12 +20,10 @@ do {
     } else { 
         alert ("Было введено не число, попробуйте еще раз");
     }
-} while (input !== null) 
+} while (input !== null && numbers.length > 0);
 
 for (const number of numbers) {
-    if (numbers.length !==0) {
     total += number;
-    } 
     console.log(`Общая сумма чисел равна ${total}`); 
 }
 
