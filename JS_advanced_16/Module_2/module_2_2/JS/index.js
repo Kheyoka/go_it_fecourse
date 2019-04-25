@@ -23,16 +23,15 @@ let inputPasswords;
         while (attemptsLeft) {
         inputPasswords = prompt ('Введите пароль');
         if (inputPasswords === null) break;
+        attemptsLeft --;
         if (passwords.includes(inputPasswords)) {
             alert ('Добро пожаловать!');
             break;
         } else {
-                attemptsLeft --;
                 alert (`Неверный пароль, у вас осталось ${attemptsLeft} попыток`);     
             } 
         if (!attemptsLeft) {
-                alert ('У вас закончились попытки, аккаунт заблокирован!');
-                
+                alert ('У вас закончились попытки, аккаунт заблокирован!'); 
             } 
          } 
          
